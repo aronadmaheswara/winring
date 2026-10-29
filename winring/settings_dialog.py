@@ -1,4 +1,4 @@
-from PySide6.QtCore import Qt, Signal
+from PySide6.QtCore import QEvent, Qt, Signal
 from PySide6.QtGui import QColor, QFont, QIcon, QPainter, QPixmap
 from PySide6.QtWidgets import (QCheckBox, QComboBox, QDialog, QFormLayout, QHBoxLayout, QLabel,
                                QPushButton, QSlider, QVBoxLayout, QWidget)
@@ -38,7 +38,7 @@ class HotkeyButton(QPushButton):
         self._rec = True; self._refresh(); self.setFocus()
 
     def event(self, e):
-        if self._rec and e.type() == e.Type.ShortcutOverride:
+        if self._rec and e.type() == QEvent.Type.ShortcutOverride:
             e.accept(); return True
         return super().event(e)
 

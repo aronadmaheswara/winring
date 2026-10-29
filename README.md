@@ -14,9 +14,8 @@ pythonw winring.pyw
 Aplikasi berjalan di system tray (klik ikon untuk Pengaturan: hotkey, urutan, tema, ukuran, transparansi, autostart).
 
 ## Build .exe
-```
-powershell -ExecutionPolicy Bypass -File build.ps1
-```
+Klik dua kali `build.bat` (butuh Python) -> hasil di `dist\WinRing.exe`.
+Atau upload ke GitHub dan jalankan workflow *Build WinRing.exe* (tab Actions) tanpa perlu Python.
 
 ## Struktur
 - `winring/winapi.py` – daftar window & aktivasi (ctypes, tanpa pywin32)

@@ -2,10 +2,10 @@
 import sys
 
 from PySide6.QtCore import Qt
-from PySide6.QtGui import QAction, QColor, QFileIconProvider, QIcon, QPainter, QPen, QPixmap
+from PySide6.QtGui import QAction, QColor, QIcon, QPainter, QPen, QPixmap
 from PySide6.QtCore import QFileInfo
 from PySide6.QtNetwork import QLocalServer, QLocalSocket
-from PySide6.QtWidgets import QApplication, QMenu, QSystemTrayIcon
+from PySide6.QtWidgets import QApplication, QFileIconProvider, QMenu, QSystemTrayIcon
 
 from winring import APP_NAME, config as C, winapi
 from winring.hotkey import HotkeyHook
